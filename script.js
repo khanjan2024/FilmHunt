@@ -16,7 +16,8 @@ searchButton.addEventListener('click', function() {
     // Show loading spinner
     spinner.style.display = 'block';
     
-    const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(movieTitle)}`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(movieTitle)}`;
+
 
     fetch(apiUrl)
         .then(response => response.json())
